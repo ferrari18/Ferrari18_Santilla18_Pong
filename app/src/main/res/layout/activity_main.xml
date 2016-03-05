@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+
+    <edu.up.pongstarter.AnimationSurface
+        android:id="@+id/animationSurface"
+        android:layout_width="812dp"
+        android:layout_height="fill_parent" >
+    </edu.up.pongstarter.AnimationSurface>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expert Mode"
+            android:id="@+id/Expertbutton"
+            android:layout_gravity="center_vertical"
+            android:background="#00ff00"
+            android:layout_below="@+id/Beginnerbutton"
+            android:layout_alignLeft="@+id/Beginnerbutton"
+            android:layout_alignStart="@+id/Beginnerbutton"
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@+id/Startbutton"
+            android:layout_alignEnd="@+id/Startbutton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner Mode"
+            android:id="@+id/Beginnerbutton"
+            android:layout_gravity="center_vertical"
+            android:layout_column="12"
+            android:background="#00ff00"
+            android:layout_below="@+id/Startbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/Startbutton"
+            android:background="#00ff00"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/PongTitle"
+            android:layout_alignLeft="@+id/Beginnerbutton"
+            android:layout_alignStart="@+id/Beginnerbutton"
+            android:layout_alignRight="@+id/Beginnerbutton"
+            android:layout_alignEnd="@+id/Beginnerbutton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Pong "
+            android:id="@+id/PongTitle"
+            android:textColor="#00ff00"
+            android:textSize="65dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Player Score"
+            android:id="@+id/PlayerScore"
+            android:textSize="26dp"
+            android:textColor="#00ff00"
+            android:phoneNumber="false"
+            android:textStyle="bold"
+            android:layout_below="@+id/Expertbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="10"
+            android:id="@+id/NumScore1"
+            android:textColor="#00ff00"
+            android:textSize="50dp"
+            android:layout_below="@+id/PlayerScore"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Computer Score"
+            android:id="@+id/ComputerScore"
+            android:textColor="#00ff00"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/NumScore1"
+            android:layout_alignLeft="@+id/PongTitle"
+            android:layout_alignStart="@+id/PongTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="5"
+            android:id="@+id/NumScore2"
+            android:textColor="#00ff00"
+            android:textSize="50dp"
+            android:layout_below="@+id/ComputerScore"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" Balls Left"
+            android:id="@+id/ballsLeft"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:background="#00ff00"
+            android:layout_above="@+id/numBallsLeft"
+            android:layout_alignLeft="@+id/Beginnerbutton"
+            android:layout_alignStart="@+id/Beginnerbutton"
+            android:layout_alignRight="@+id/PlayerScore"
+            android:layout_alignEnd="@+id/PlayerScore" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="    5"
+            android:id="@+id/numBallsLeft"
+            android:background="#00ff00"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/ballsLeft"
+            android:layout_alignStart="@+id/ballsLeft"
+            android:layout_alignRight="@+id/ballsLeft"
+            android:layout_alignEnd="@+id/ballsLeft" />
+    </RelativeLayout>
+
+</LinearLayout>
+
